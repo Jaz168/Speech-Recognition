@@ -16,26 +16,24 @@ recognition.addEventListener('result', (e)=>{
 
   p.innerText = text;
   if(e.results[0].isFinal){
-    if (text.includes('cómo estás')) {
+    if (text.includes('how are you')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'Estoy bien';
+      p.innerText = 'I am fine';
       texts.appendChild(p)
     }
-    if (text.includes("
-cuál es tu nombre") || text.includes('cuál es tu nombre')) {
+    if (text.includes("what's your name") || text.includes('what is your name')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = '
-Mi nombre es Cifar';
+      p.innerText = 'My Name is Cifar';
       texts.appendChild(p)
     }
-    if (text.includes('abre mi youtube')) {
+    if (text.includes('open my YouTube')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'abriendo youtube';
+      p.innerText = 'opening youtube channel';
       texts.appendChild(p)
-      console.log('abriendo youtube')
+      console.log('opening youtube')
       window.open('https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ')
     }
     p = document.createElement('p');
