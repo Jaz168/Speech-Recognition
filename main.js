@@ -16,19 +16,19 @@ recognition.addEventListener('result', (e)=>{
 
   p.innerText = text;
   if(e.results[0].isFinal){
-    if (text.includes('How are you')) {
+    if (text.includes('how are you')) {
       p = document.createElement('p');
       p.classList.add('replay');
       p.innerText = 'I am fine';
       texts.appendChild(p)
     }
-    if (text.includes("What's your name") || text.includes('What is your name')) {
+    if (text.includes("what's your name") || text.includes('what is your name')) {
       p = document.createElement('p');
       p.classList.add('replay');
       p.innerText = 'My Name is Cifar';
       texts.appendChild(p)
     }
-    if (text.includes('Open my YouTube')) {
+    if (text.includes('open my YouTube')) {
       p = document.createElement('p');
       p.classList.add('replay');
       p.innerText = 'opening youtube channel';
